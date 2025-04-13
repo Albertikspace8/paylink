@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Выберите банк</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 30px; }
+    button {
+      font-size: 18px;
+      padding: 15px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .sber { background-color: #21A038; color: white; }
+    .tinkoff { background-color: #FFD700; color: black; }
+    .other { background-color: #eee; }
+  </style>
+</head>
+<body>
+  <h1>Выберите ваш банк</h1>
+  <p>Чтобы перевести через СБП на номер <b>+7 900 123-45-67</b></p>
+
+  <button class="sber" onclick="location.href='sberbankonline://send?phone=79001234567'">Сбербанк</button>
+  <button class="tinkoff" onclick="location.href='https://www.tinkoff.ru/pay?phone=79001234567'">Тинькофф</button>
+  <button class="other" onclick="location.href='https://qr.nspk.ru/AD10004N7J15LJG8QCHDF28B49EM0QJ7'">Другой банк</button>
+
+</body>
+</html>
